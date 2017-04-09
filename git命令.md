@@ -1,8 +1,11 @@
 # Git常用操作命令
+==============================================
 ## 远程仓库相关命令
+----------------------------------------------
     检出仓库:$ git clone git://github.com/jquery/jquery.git
 
     查看远程仓库：$ git remote -v
+    
     添加远程仓库：$ git remote add [name] [url]
 
     删除远程仓库：$ git remote rm [name]
@@ -24,7 +27,7 @@
  
 
 ## 分支(branch)操作相关命令
-
+------------------------------------------------------
     查看本地分支：$ git branch
 
     查看远程分支：$ git branch -r
@@ -56,7 +59,7 @@
  
 
 ## 版本(tag)操作相关命令
-
+-----------------------------------------------------------------
     查看版本：$ git tag
 
     创建版本：$ git tag [name]
@@ -78,7 +81,7 @@
  
 
 ## 子模块(submodule)相关操作命令
-
+------------------------------------------------
     添加子模块：$ git submodule add [url] [path]
 
     如：$git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs
@@ -100,7 +103,7 @@
  
 
 ## 忽略一些文件、文件夹不提交
-
+----------------------------------------
 在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如
 
     target
@@ -109,12 +112,12 @@
 
     *.db
 
-## Git 常用命令
-git branch 查看本地所有分支
-git status 查看当前状态 
-git commit 提交 
-git branch -a 查看所有的分支
-git branch -r 查看本地所有分支
+### Git 常用命令
+    git branch 查看本地所有分支
+    git status 查看当前状态 
+    git commit 提交 
+    git branch -a 查看所有的分支
+    git branch -r 查看本地所有分支
 git commit -am "init" 提交并且加注释 
 git remote add origin git@192.168.1.119:ndshow
 git push origin master 将文件给推到服务器上 
